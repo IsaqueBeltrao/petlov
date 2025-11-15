@@ -4,7 +4,7 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     container:
-      image: cypress/browser:22.16.0
+      image: cypress/browsers:22.16.0
       options: --user root
     # Uses official Cypress Docker image with Cypress pre-installed
     # Runs tests in parallel with matrix strategy https://docs.cypress.io/guides/guides/parallelization
