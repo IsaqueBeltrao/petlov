@@ -1,9 +1,11 @@
 name: Cypress e2e Tests
-on: 
+on:
   workflow_dispatch:
     inputs:
       spec:
-        default: 'cypress/e2e/*
+        description: 'Caminho dos testes Cypress'
+        required: false
+        default: 'cypress/e2e/*'
 jobs:
   tests:
     runs-on: ubuntu-latest
